@@ -25,20 +25,20 @@ const projectsData = [
     {
       id: 3,
       title: "Landing Page",
-      description: "A simple and responsive landing page to showcase laptops and their prices",
-      image: "/images/projects/landing.png",
+      description: "A simple and responsive landing page to showcase gas cookers and their features",
+      image: "/images/projects/catalogue.png",
       tag: ["All", "Web"],
-      gitUrl: "https://github.com/CliveOuma/landing-page",
-      previewUrl: "https://laptops-landing-page.vercel.app/",
+      gitUrl: "https://github.com/CliveOuma/Tianlong-catalogue",
+      previewUrl: "https://tianlong-catalogue.vercel.app/",
     },
     {
       id: 4,
-      title: "Student Management System",
-      description: "A solution for managing students,students to also access details securely.",
-      image: "/images/projects/std-image.png",
+      title: "Safety Management System",
+      description: "A solution for recording and managing near-miss incidents",
+      image: "/images/projects/safety.png",
       tag: ["All"],
-      gitUrl: "https://github.com/CliveOuma/student-management-system",
-      previewUrl: "/",
+      gitUrl: "https://github.com/CliveOuma/safety-management-system",
+      previewUrl: "https://safety-management-system.vercel.app/",
     },
     {
       id: 5,
@@ -62,8 +62,8 @@ const Project = () => {
     );
   return (
     <>
-    <h2 className='text-center text-4xl font-bold mt-4  pb-5 text-white'>My Works</h2>
-    <section className="project my-12 md:my-12 pt-4  gap-2" id="project">
+    <section className="project my-12 md:my-12 pt-20  gap-2" id="project">
+    <h2 className='text-center text-4xl mb-2 font-bold mt-4 text-white'>My Works</h2>
     <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
     <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"}/>
     <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"}/>

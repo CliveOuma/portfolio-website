@@ -34,13 +34,13 @@ const Skill = () => {
 
   return (
     <section className="skill bg-black-100" id="skills">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-center sm:border-[#33353F] sm:border">
+      <div className="container mx-auto pt-20 px-4">
+      <h2 className="text-4xl font-bold mb-6 text-white justify-center items-center flex">Tech Stack</h2>
+      <p className="text-lg mb-8 text-white justify-center items-center flex">I am versatile and advanced in using different programming
+                languages, tools and frameworks.</p>
+        <div className="flex flex-wrap justify-center py-5 sm:border-[#33353F] sm:border">
           <div className="w-full lg:w-10/12">
             <div className="skill-bx wow zoom-in">
-              <h2 className="text-3xl font-bold mb-6 text-white justify-center items-center flex">Tech Stack</h2>
-              <p className="text-lg mb-8 text-white justify-center items-center flex">I am versatile and advanced in using different programming
-                languages, tools and frameworks.<br></br>I am currently learning new technologies to gain relevant skills required.</p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
                   <Image src="/assets/img/html.png" alt="Image" width={200}
@@ -48,9 +48,29 @@ const Skill = () => {
                   <h5 className="text-xl font-semibold text-center text-white">HTML</h5>
                 </div>
                 <div className="item">
+                  <Image src="/assets/img/css.png" alt="Image" width={200}
+                    height={200} className="w-32 h-32 mx-auto mb-4" />
+                  <h5 className="text-xl font-semibold text-center text-white">CSS</h5>
+                </div>
+                <div className="item">
+                  <Image src="/assets/img/javascript.png" alt="Image" width={200}
+                    height={200} className="w-32 h-32 mx-auto mb-4" />
+                  <h5 className="text-xl font-semibold text-center text-white">JavaScript</h5>
+                </div>
+                <div className="item">
                   <Image src="/assets/img/git.png" alt="Image" width={200}
                     height={200} className="w-32 h-32 mx-auto mb-4" />
                   <h5 className="text-xl font-semibold text-center text-white">Git</h5>
+                </div>
+                <div className="item">
+                  <Image src="/assets/img/next.png" alt="Image" width={200}
+                    height={200} className="w-32 h-32 mx-auto mb-4" />
+                  <h5 className="text-xl font-semibold text-center text-white">Next JS</h5>
+                </div>
+                <div className="item">
+                  <Image src="/assets/img/typescript.png" alt="Image" width={200}
+                    height={200} className="w-32 h-32 mx-auto mb-4" />
+                  <h5 className="text-xl font-semibold text-center text-white">TypeScript</h5>
                 </div>
                 <div className="item">
                   <Image src="/assets/img/mysql1.png" width={200}
@@ -71,6 +91,16 @@ const Skill = () => {
                   <Image src="/assets/img/react.png" alt="Image" width={200}
                     height={200} className="w-32 h-32 mx-auto mb-4" />
                   <h5 className="text-xl font-semibold text-center text-white">React</h5>
+                </div>
+                <div className="item">
+                  <Image src="/assets/img/Vercel.png" alt="Image" width={200}
+                    height={200} className="w-32 h-32 mx-auto mb-4" />
+                  <h5 className="text-xl font-semibold text-center text-white">Vercel</h5>
+                </div>
+                <div className="item">
+                  <Image src="/assets/img/netlify.png" alt="Image" width={200}
+                    height={200} className="w-32 h-32 mx-auto mb-4" />
+                  <h5 className="text-xl font-semibold text-center text-white">Netlify</h5>
                 </div>
               </Carousel>
             </div>

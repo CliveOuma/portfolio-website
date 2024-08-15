@@ -45,9 +45,9 @@ const Contact = () => {
 
   return (
     <>
-      <h2 className='text-center text-4xl font-bold mt-4 py-2  text-white'>Contact</h2>
-      <section className="contact my-12 md:my-12 pt-4 gap-2" id="contact">
-        <div className="container mx-auto">
+    <section className="contact my-12 md:my-12 gap-2" id="contact">
+        <div className="container mx-auto pt-16">
+        <h2 className='text-center text-4xl font-bold mt-4 py-2  text-white'>Contact</h2>
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2">
               <h2 className="text-3xl flex justify-center items-center text-white font-bold mt-5 mb-4">Get In Touch</h2>
