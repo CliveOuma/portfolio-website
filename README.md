@@ -1,45 +1,50 @@
-## Full Stack E-commerce Website
-#Overview
-This project is a full stack e-commerce website built using Next.js, with TypeScript. The website allows users to browse products, add them to the cart, and proceed to checkout. The admin panel enables managing products, orders, and users.
+## Description
+This is a responsive portfolio website built using Next.js and Tailwind CSS. It showcases my skills, projects, and contact information in an organized and visually appealing manner. The portfolio is designed to be mobile-friendly and accessible across various devices.
 
 ## Features
-- User Authentication: Sign up, log in, and manage user accounts.
-- Product Management: View, add, edit, and delete products.
-- Shopping Cart: Add products to the cart, update quantities, and remove items.
-- Order Management: Place orders, view order history, and manage order statuses.
-- Responsive Design: Mobile-first design using Tailwind CSS.
-- Admin Panel: Manage products, orders, and users.
-- API Integration: RESTful API built with Next.js API routes.
-## Technologies Used
-#Frontend:
+-Responsive Design: The portfolio is optimized for various screen sizes, ensuring a seamless experience across desktop, tablet, and mobile devices.
 
-Next.js
-React
-TypeScript
-Tailwind CSS
-#Backend:
+-Dynamic Content: Project data and skills are dynamically loaded from a data source, making it easy to update and maintain.
 
-Next.js API Routes
-Prisma
-#Database:
+-Project Showcase: Showcases my projects with descriptions, links, and images to provide a comprehensive overview.
 
-mongoDB
+-Contact Form: Includes a contact form for visitors to reach out, enabling seamless communication.
 
-#Authentication:
+-Customizable: Easily customizable to add new projects, update skills, or modify the layout to suit individual preferences.
 
-NextAuth.js
+## Installation
 
-## Set up Prisma
+## Clone the repository:
 
-Generate Prisma Client and migrate the database:
+git clone https://github.com/cliveouma/new-portfolio.git
 
-npx prisma generate
-npx prisma migrate dev --name init
+Navigate to the project directory:
+
+cd your-portfolio
+
+Install dependencies:
+
+npm install
 
 ## Usage
 
-Product Management
-Admins can add, edit, and delete products through the admin panel. Product information includes name, description, price, and images.
+Start the development server:
 
-Shopping Cart
-Users can add products to their cart, update quantities, and remove items. The cart's state is managed using React's context API.
+npm run dev
+
+Open your browser and navigate to http://localhost:3000 to view the portfolio.
+
+## Technologies Used
+
+1. Next.js
+
+2. Tailwind CSS
+
+3. React
+
+## Contributing
+Contributions are welcome! Please feel to submit for any improvements, bug fixes, or new features.
+
+## Contact
+
+Email: cliveouma5@gmail.com
