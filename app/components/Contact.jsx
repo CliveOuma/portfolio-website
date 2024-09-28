@@ -24,51 +24,54 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
-  setButtonText("Sending...");
-  let response = await fetch("/api/contact", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formDetails),
-  });
-  setButtonText("Send message");
-  let result = await response.json();
-  setFormDetails(formInitialDetails);
-  if (result.success) {
-    setStatus({ success: true, message: 'Message sent successfully' });
-  } else {
-    setStatus({ success: false, message: 'Something went wrong, please try again.' });
-  }
-};
+    e.preventDefault();
+    setButtonText("Sending...");
+    let response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formDetails),
+    });
+    setButtonText("Send message");
+    let result = await response.json();
+    setFormDetails(formInitialDetails);
+    if (result.success) {
+      setStatus({ success: true, message: 'Message sent successfully' });
+    } else {
+      setStatus({ success: false, message: 'Something went wrong, please try again.' });
+    }
+  };
 
   return (
     <>
-    <section className="contact my-12 md:my-12 gap-2" id="contact">
+      <section className="contact my-12 md:my-12 gap-2" id="contact">
         <div className="container mx-auto pt-16">
-        <h2 className='text-center text-4xl font-bold mt-4 py-2  text-white'>Contact</h2>
+          <h2 className='text-center text-4xl font-bold mt-4 py-2  text-white'>Contact</h2>
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2">
               <h2 className="text-3xl flex justify-center items-center text-white font-bold mt-5 mb-4">Get In Touch</h2>
               <p className="text-gray-600 mb-4">We can connect as my inbox is always open. Feel free to ask questions or you can simply say Hi,
                 I will get back to you shortly!</p>
+
               <TrackVisibility>
-                {({ isVisible }) =>
-                  <Image src="/images/contact-image.png"
+                {({ isVisible }) => (
+                  <Image
+                    src="/images/contact-image.png"
                     width={300}
                     height={300}
-                    className={isVisible ? "animate__animated animate__zoomIn" : ""}
+                    className={isVisible ? "animate__animated animate__zoomIn" : "animate__animated animate__zoomOut"}
                     alt="Image"
                     style={{ width: "auto", height: "auto" }}
                     priority={true}
                   />
-                }
+                )}
               </TrackVisibility>
             </div>
+
             <div className="md:w-1/2">
               <TrackVisibility>
-                {({ isVisible }) =>
+                {({ isVisible }) => (
                   <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                     <form onSubmit={handleSubmit} className="w-full">
                       <div className="flex flex-wrap  mt-6">
@@ -97,7 +100,7 @@ const Contact = () => {
                       }
                     </form>
                   </div>
-                }
+                )}
               </TrackVisibility>
             </div>
           </div>

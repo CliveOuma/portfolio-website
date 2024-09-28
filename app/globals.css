@@ -6,9 +6,35 @@
   perspective: 1000px;
 }
 
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.custom-zoom-in {
+  animation: zoom-in 0.5s forwards;
+}
+
+.custom-zoom-out {
+  animation: zoom-out 0.5s forwards;
+}
+
 .card {
-  width: 24rem; /* default width for larger screens */
-  height: 25rem; /* default height for larger screens */
+  width: 24rem;
+  height: 25rem; 
   border-radius: 1rem;
   position: relative;
   display: flex;

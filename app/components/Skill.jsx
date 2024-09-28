@@ -1,114 +1,75 @@
-"use client";
-import React, { useState, useEffect } from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import Image from 'next/image'
+// @flow strict
+"use client"
+import { skillsData } from "@/utils/data/skill";
+import { skillsImage } from "@/utils/skill-image";
+import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
-const Skill = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) return null;
-
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
-
+function Skills() {
   return (
-    <section className="skill bg-black-100" id="skills">
-      <div className="container mx-auto pt-20 px-4">
-      <h2 className="text-4xl font-bold mb-6 text-white justify-center items-center flex">Tech Stack</h2>
-      <p className="text-lg mb-8 text-white justify-center items-center flex">I am versatile and advanced in using different programming
-                languages, tools and frameworks.</p>
-        <div className="flex flex-wrap justify-center py-5 sm:border-[#33353F] sm:border">
-          <div className="w-full lg:w-10/12">
-            <div className="skill-bx wow zoom-in">
-              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                <div className="item">
-                  <Image src="/assets/img/html.png" alt="Image" width={200}
-                    height={200} className="w-32 h-32 mx-auto mb-4" />
-                  <h5 className="text-xl font-semibold text-center text-white">HTML</h5>
-                </div>
-                <div className="item">
-                  <Image src="/assets/img/css.png" alt="Image" width={200}
-                    height={200} className="w-32 h-32 mx-auto mb-4" />
-                  <h5 className="text-xl font-semibold text-center text-white">CSS</h5>
-                </div>
-                <div className="item">
-                  <Image src="/assets/img/javascript.png" alt="Image" width={200}
-                    height={200} className="w-32 h-32 mx-auto mb-4" />
-                  <h5 className="text-xl font-semibold text-center text-white">JavaScript</h5>
-                </div>
-                <div className="item">
-                  <Image src="/assets/img/git.png" alt="Image" width={200}
-                    height={200} className="w-32 h-32 mx-auto mb-4" />
-                  <h5 className="text-xl font-semibold text-center text-white">Git</h5>
-                </div>
-                <div className="item">
-                  <Image src="/assets/img/next.png" alt="Image" width={200}
-                    height={200} className="w-32 h-32 mx-auto mb-4" />
-                  <h5 className="text-xl font-semibold text-center text-white">Next JS</h5>
-                </div>
-                <div className="item">
-                  <Image src="/assets/img/typescript.png" alt="Image" width={200}
-                    height={200} className="w-32 h-32 mx-auto mb-4" />
-                  <h5 className="text-xl font-semibold text-center text-white">TypeScript</h5>
-                </div>
-                <div className="item">
-                  <Image src="/assets/img/mysql1.png" width={200}
-                    height={200} alt="Image" className="w-32 h-32 mx-auto mb-4" />
-                  <h5 className="text-xl font-semibold text-center text-white">MySQL</h5>
-                </div>
-                <div className="item">
-                  <Image src="/assets/img/db.png" alt="Image" width={200}
-                    height={200} className="w-32 h-32 mx-auto mb-4 rounded-full" />
-                  <h5 className="text-xl font-semibold text-center text-white">MongoDB</h5>
-                </div>
-                <div className="item">
-                  <Image src="/assets/img/nodejs.png" alt="Image" width={200}
-                    height={200} className="w-32 h-32 mx-auto mb-4" />
-                  <h5 className="text-xl font-semibold text-center text-white">Node JS</h5>
-                </div>
-                <div className="item">
-                  <Image src="/assets/img/react.png" alt="Image" width={200}
-                    height={200} className="w-32 h-32 mx-auto mb-4" />
-                  <h5 className="text-xl font-semibold text-center text-white">React</h5>
-                </div>
-                <div className="item">
-                  <Image src="/assets/img/Vercel.png" alt="Image" width={200}
-                    height={200} className="w-32 h-32 mx-auto mb-4" />
-                  <h5 className="text-xl font-semibold text-center text-white">Vercel</h5>
-                </div>
-                <div className="item">
-                  <Image src="/assets/img/netlify.png" alt="Image" width={200}
-                    height={200} className="w-32 h-32 mx-auto mb-4" />
-                  <h5 className="text-xl font-semibold text-center text-white">Netlify</h5>
-                </div>
-              </Carousel>
-            </div>
-          </div>
+    <div id="skills" className="relative my-12 lg:my-24">
+      <div className="flex justify-center my-5 lg:py-8">
+        <div className="flex  items-center">
+          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+            Skills
+          </span>
+          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
-    </section>
-  )
-}
+      <div className="title text-center mt-10 mb-16">
+  <h1 className="text-2xl md:text-3xl text-white font-bold leading-relaxed">
+    <b>
+      Using
+      <span className='text-blue-600'> modern</span> technologies to take your 
+      <span className='text-blue-600'> digital</span> presence 
+      <br className="hidden sm:block" /> to the next level
+    </b>
+    </h1>
+  </div>
+  
+  <div className="w-full my-12">
+        <Marquee
+          gradient={false}
+          speed={80}
+          pauseOnHover={true}
+          pauseOnClick={true}
+          delay={0}
+          play={true}
+          direction="left"
+        >
+          {skillsData.map((skill, id) => (
+            <div className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 
+            sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
+              key={id}>
+              <div className="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none
+               shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
+                <div className="flex -translate-y-[1px] justify-center">
+                  <div className="w-3/4">
+                    <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
+                  </div>
+                </div>
+                <div className="flex flex-col items-center justify-center gap-3 p-6">
+                  <div className="h-8 sm:h-10">
+                    <Image
+                      src={skillsImage(skill)?.src}
+                      alt={skill}
+                      width={40}
+                      height={40}
+                      className="h-full w-auto rounded-lg"
+                    />
+                  </div>
+                  <p className="text-white text-sm sm:text-lg">
+                    {skill}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Marquee>
+      </div>
+    </div>
+  );
+};
 
-export default Skill;
+export default Skills;

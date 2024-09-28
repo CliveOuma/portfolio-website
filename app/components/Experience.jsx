@@ -50,7 +50,7 @@ const Each = ({ experience }) => {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="perspective w-80 sm:w-96" onClick={handleCardClick}>
+      <div className="perspective w-70 sm:w-90" onClick={handleCardClick}>
         <div className={`card ${flipped ? "flipped" : ""}`}>
           <div className="card-front bg-white shadow-lg rounded-lg p-6">
             <div className="expBody">
@@ -94,9 +94,15 @@ const Experience = () => {
   return (
     <section className="text-white py-24" id="experience">
       <div className="container mx-auto flex flex-col items-center">
-        <h1 className="text-4xl text-center font-bold text-white mb-6">
-          Work Experience
-        </h1>
+        <div className="flex justify-center my-5 lg:py-8">
+        <div className="flex  items-center">
+          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+            Experience
+          </span>
+          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+        </div>
+      </div>
         <p
           className="text-xl text-center mb-6 animate__animated animate__heartBeat 
   animate__infinite animate__slower animate-pulse sm:hidden md:hidden lg:hidden
