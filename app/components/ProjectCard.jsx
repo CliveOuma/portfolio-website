@@ -1,15 +1,18 @@
-import React from 'react'
-import { EyeIcon, CodeBracketIcon } from '@heroicons/react/24/solid'
-import Link from 'next/link'
+import React from 'react';
+import { EyeIcon, CodeBracketIcon } from '@heroicons/react/24/solid';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const ProjectCard = ({ imgUrl, title, description, previewUrl, gitUrl }) => {
   return (
     <div className='rounded-lg overflow-hidden bg-gray-900 shadow-lg transition-transform transform hover:scale-105'>
       <div className='relative w-full h-40 sm:h-48 md:h-56 lg:h-64'>
-        <img 
+        <Image 
           src={imgUrl} 
           alt={title} 
-          className='w-full h-full object-cover' 
+          layout='fill'
+          objectFit='cover' 
+          className='w-full h-full' 
         />
       </div>
 
@@ -31,7 +34,7 @@ const ProjectCard = ({ imgUrl, title, description, previewUrl, gitUrl }) => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default ProjectCard;
