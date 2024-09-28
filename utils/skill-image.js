@@ -53,5 +53,7 @@ export const skillsImage = (skill) => {
       return mysql;
   case 'canva':
         return canva;
+   default:
+        return null;
 }
 }

@@ -12,7 +12,7 @@ const ProjectCard = ({ imgUrl, title, description, previewUrl, gitUrl }) => {
           alt={title} 
           layout='fill'
           objectFit='cover' 
-          className='w-full h-full' 
+          className="w-auto h-8 sm:h-10" 
         />
       </div>
 
