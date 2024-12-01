@@ -26,9 +26,11 @@ const Hero = () => {
               sequence={[
                 'Clive Ouma',
                 1000,
-                'Software Engineer',
+                'Full Stack Developer ',
                 1000,
-                'Web Developer',
+                'Aspiring Data Scientist ',
+                1000,
+                'Passionate About AI & ML',
                 1000,
               ]}
               wrapper="span"
@@ -37,7 +39,7 @@ const Hero = () => {
             />
           </h1>
           <p className='text-white lg:text-xl text-base mb-6 sm:text-lg' data-aos="zoom-out-up">
-            I am a Software Engineer creating accessible and quality software applications.
+          Building accessible,Scalable Web Applications & Intelligent Data-Driven Solutions.
           </p>
           <div>
             <button className='py-3 px-6 mr-4 rounded-full sm:w-fit w-full bg-gradient-to-br from-orange-500 via-red-600 to-blue-500 hover:bg-slate-200 text-white'>

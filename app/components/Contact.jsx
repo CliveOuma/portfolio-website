@@ -91,7 +91,7 @@ const Contact = () => {
                           <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)} className="bg-gray-200 border border-gray-300 rounded-lg py-2 px-4 w-full text-black focus:outline-none focus:border-indigo-500"></textarea>
                         </div>
                         <div className="w-full px-2">
-                          <button type="submit" className="bg-orange-600 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">{buttonText}</button>
+                          <button type="submit" className="py-3 px-6 mr-4 rounded-full sm:w-fit w-full bg-gradient-to-br from-orange-500 via-red-600 to-blue-500 hover:bg-slate-200 text-white">{buttonText}</button>
                         </div>
                       </div>
                       {

@@ -4,7 +4,6 @@ import ProjectCard from './ProjectCard';
 import ProjectTag from './ProjectTag';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Link from 'next/link';
 
 const projectsData = [
   {
@@ -12,7 +11,7 @@ const projectsData = [
     title: "Sunglasses Website",
     description: "A responsive website to showcase sunglasses a customer can purchase.",
     image: "/images/projects/sunglasses.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/CliveOuma/sun-glasses",
     previewUrl: "https://get-sun-glasses.netlify.app/",
   },
@@ -21,36 +20,36 @@ const projectsData = [
     title: "Ecommerce Application",
     description: "An application that enables users to view and purchase products displayed.",
     image: "/images/projects/ebuy.png",
-    tag: ["All", "Web"],
+    tag: ["All", "FullStack"],
     gitUrl: "https://github.com/CliveOuma/Ecommerce-Application",
     previewUrl: "https://ecommerce-application-ebuy.vercel.app",
   },
   {
     id: 3,
+    title: "Student Mangement System",
+    description: "A solution for lecturers and students to access their information securely.",
+    image: "/images/projects/std.png",
+    tag: ["All", "FullStack"],
+    gitUrl: "https://github.com/CliveOuma/student-management-system",
+    previewUrl: "https://the-student-management-system.vercel.app/",
+  },
+  {
+    id: 4,
     title: "Safety Management System",
-    description: "A solution for recording and managing near-miss incidents.",
+    description: "A solution for recording near-miss incidents at Tianlong company.",
     image: "/images/projects/tianlong-safety.png",
-    tag: ["All"],
+    tag: ["All", "FullStack"],
     gitUrl: "https://github.com/CliveOuma/safety-management-system",
     previewUrl: "https://safety-management-system.vercel.app/",
   },
   {
-    id: 4,
-    title: "Landing Page",
+    id: 5,
+    title: "Tianlong Landing Page",
     description: "A simple, responsive landing page to showcase gas cookers & their features.",
     image: "/images/projects/gas-catalogue.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/CliveOuma/Tianlong-catalogue",
     previewUrl: "https://tianlong-catalogue.vercel.app/",
-  },
-  {
-    id: 5,
-    title: "Link Haven",
-    description: "A web-based bookmarking application, allows to manage your favorite sites.",
-    image: "/images/projects/linkhaven.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/CliveOuma/link-haven",
-    previewUrl: "https://linkhaven.netlify.app/",
   },
 ];
 
@@ -99,7 +98,8 @@ const Project = () => {
       </div>      
       <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
         <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
-        <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
+        <ProjectTag onClick={handleTagChange} name="Frontend" isSelected={tag === "Frontend"} />
+        <ProjectTag onClick={handleTagChange} name="FullStack" isSelected={tag === "FullStack"} />
       </div>
       
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 px-4 md:px-10'>

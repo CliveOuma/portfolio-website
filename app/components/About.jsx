@@ -53,17 +53,29 @@ const About = () => {
         <Image src="/images/about-image.png" width={500} height={500} alt="about image" />
         <div className="mt-4 md:mt-0 pt-20 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-            As a software engineer, I am deeply passionate about crafting elegant solutions.
-            With a solid foundation in programming languages and frameworks such as JavaScript, React, Next.js,
-            Node.js, Express.js, and Tailwind CSS, I thrive in environments where creativity meets technical prowess.
-            My collaborative spirit, coupled with my dedication to continuous learning, drives me to
-            adapt swiftly to new technologies and methodologies. In my spare time,
-            I enjoy exploring emerging technologies and honing my skills
-            through personal coding. My goal is to grow into a proficient
-            software engineer who not only writes impeccable code but also fosters a culture of teamwork,
-            innovation, and excellence in every project I undertake.
+          <p className="text-base lg:text-lg leading-relaxed text-gray-300 mt-4">
+            Hello! I am a passionate Frontend Developer with a strong foundation in creating scalable and high-performance web applications that deliver engaging and seamless user experiences. With a deep understanding of modern web technologies, I specialize in:
           </p>
+          <ul className="list-disc list-inside mt-2 mb-4 text-gray-300">
+            <li>Frontend Technologies: HTML, CSS, JavaScript, TypeScript, React.js, Next.js, and Tailwind CSS.</li>
+          </ul>
+          <p className="text-base lg:text-lg leading-relaxed text-gray-300 mt-4">
+            My approach to development goes beyond just coding—I'm driven to build user-centric, responsive designs and interactive interfaces that engage users and provide smooth, dynamic experiences.
+          </p>
+          <p className="text-base lg:text-lg leading-relaxed text-gray-300 mt-4">
+            As a Full Stack Developer, I am also highly proficient in Backend Integration, where I ensure seamless communication between the frontend and backend systems. I work with:
+          </p>
+          <ul className="list-disc list-inside mt-2 mb-4 text-gray-300">
+            <li>Backend Technologies: Node.js and Express.js</li>
+            <li>Databases: Relational (MySQL) and Non-Relational (MongoDB)</li>
+          </ul>
+          <p className="text-base lg:text-lg leading-relaxed text-gray-300 mt-4">
+            In my pursuit of becoming a Full Stack Developer, I am continuously learning and expanding my skills to include Python for advanced backend development, which will further enhance my ability to work with more complex applications and systems.
+          </p>
+          <p className="text-base lg:text-lg leading-relaxed text-gray-300 mt-4">
+            One of my greatest passions is exploring the exciting realms of Generative AI and Machine Learning. I am actively diving into these fields to integrate cutting-edge AI solutions into practical, real-world applications. My goal is to leverage data science and machine learning techniques to build intelligent, data-driven solutions that not only solve complex problems but also transform industries.
+          </p>
+
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("education")}
