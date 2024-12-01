@@ -7,6 +7,7 @@ export const skillsData = [
   'NextJS',
   'ViteJS',
   'Tailwind',
+  'Mongodb',
   'MySQL',
   'Git',
   'Python',
