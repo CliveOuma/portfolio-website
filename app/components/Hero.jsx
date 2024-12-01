@@ -28,9 +28,7 @@ const Hero = () => {
                 1000,
                 'Full Stack Developer ',
                 1000,
-                'Aspiring Data Scientist ',
-                1000,
-                'Passionate About AI & ML',
+                'Passionate about AI & ML',
                 1000,
               ]}
               wrapper="span"

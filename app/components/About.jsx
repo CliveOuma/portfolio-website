@@ -60,7 +60,7 @@ const About = () => {
             <li>Frontend Technologies: HTML, CSS, JavaScript, TypeScript, React.js, Next.js, and Tailwind CSS.</li>
           </ul>
           <p className="text-base lg:text-lg leading-relaxed text-gray-300 mt-4">
-            My approach to development goes beyond just coding—I'm driven to build user-centric, responsive designs and interactive interfaces that engage users and provide smooth, dynamic experiences.
+            My approach to development goes beyond just coding—I am driven to build user-centric, responsive designs and interactive interfaces that engage users and provide smooth, dynamic experiences.
           </p>
           <p className="text-base lg:text-lg leading-relaxed text-gray-300 mt-4">
             As a Full Stack Developer, I am also highly proficient in Backend Integration, where I ensure seamless communication between the frontend and backend systems. I work with:
