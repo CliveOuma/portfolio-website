@@ -8,7 +8,6 @@ import typescript from '/public/svg/skills/typescript.svg';
 import tailwind from '/public/svg/skills/tailwind.svg';
 import nextjs from '/public/svg/skills/nextjs.svg';
 import git from '/public/svg/skills/git.svg';
-import mongodb from '/public/svg/skills/mongodb.svg';
 import bootstrap from '/public/svg/skills/bootstrap.svg';
 import firebase from '/public/svg/skills/firebase.svg';
 import django from '/public/svg/skills/django.svg';
@@ -39,8 +38,6 @@ export const skillsImage = (skill) => {
       return nextjs;
   case 'git':
       return git;
-  case 'mongodb':
-      return mongodb;
   case 'bootstrap':
       return bootstrap;
   case 'firebase':
