@@ -35,7 +35,7 @@ const experiences = [
       {
         id: 1,
         detail:
-          "Worked closely with the Sanifu AI team to review data from documents for accuracy and logging any issues noted into Trello",
+          "Worked closely with the Sanifu AI team to review data from various documents to ensure accuracy by performing data mapping, also logging any issues noted into Trello boards" ,
       },
     ],
   },
