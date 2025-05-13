@@ -12,7 +12,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Frontend Development</li>
-        <li>Backend Integration</li>
+        <li>Backend Development</li>
         <li>Passionate about Data Science, AI & ML</li>
       </ul>
     ),
@@ -31,7 +31,7 @@ const TAB_DATA = [
 
 const About = () => {
   const [tab, setTab] = useState("skills");
-  const [isPending, startTransition] = useTransition();
+  const [isPending, startTransition] = useTransition(); 
 
   useEffect(() => {
     AOS.init({
@@ -53,27 +53,33 @@ const About = () => {
         <Image src="/images/about-image.png" width={500} height={500} alt="about image" />
         <div className="mt-4 md:mt-0 pt-20 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg leading-relaxed text-gray-300 mt-4">
-            Hello! I am a passionate Frontend Developer with a strong foundation in creating scalable and high-performance web applications that deliver engaging and seamless user experiences. With a deep understanding of modern web technologies, I specialize in:
+          <p className="text-gray-300 mt-4">
+            Hello! I am a Software Engineer with a strong foundation in building scalable and high-performance applications. I specialize in developing seamless, engaging user experiences and robust backend systems, using a wide range of modern technologies.
           </p>
-          <ul className="list-disc list-inside mt-2 mb-4 text-gray-300">
-            <li>Frontend Technologies: HTML, CSS, JavaScript, TypeScript, React.js, Next.js, and Tailwind CSS.</li>
+
+          <ul className="list-disc list-inside mt-2 text-gray-300">
+            <li>Frontend Technologies: HTML, CSS, JavaScript, TypeScript, React.js, Next.js, Angular, Tailwind CSS</li>
           </ul>
-          <p className="text-base lg:text-lg leading-relaxed text-gray-300 mt-4">
-            My approach to development goes beyond just coding—I am driven to build user-centric, responsive designs and interactive interfaces that engage users and provide smooth, dynamic experiences.
+
+          <p className="text-gray-300 mt-4">
+            My approach goes beyond writing code I'm committed to building user-centric, responsive, and interactive applications that provide smooth and intuitive experiences.
           </p>
-          <p className="text-base lg:text-lg leading-relaxed text-gray-300 mt-4">
-            As a Full Stack Developer, I am also highly proficient in Backend Integration, where I ensure seamless communication between the frontend and backend systems. I work with:
+
+          <p className="text-gray-300 mt-4">
+            On the backend, I ensure reliable and efficient system architecture and integration. I have experience working with:
           </p>
-          <ul className="list-disc list-inside mt-2 mb-4 text-gray-300">
-            <li>Backend Technologies: Node.js and Express.js</li>
-            <li>Databases: Relational (MySQL) and Non-Relational (MongoDB)</li>
+
+          <ul className="list-disc list-inside mt-2 text-gray-300">
+            <li>Backend Technologies: Node.js, Express.js, Java with Spring Boot, C# with .NET Framework</li>
+            <li>Databases: MySQL (Relational), MongoDB (Non-Relational)</li>
           </ul>
-          <p className="text-base lg:text-lg leading-relaxed text-gray-300 mt-4">
-            In my pursuit of becoming a Full Stack Developer, I am continuously learning and expanding my skills to include Python for advanced backend development, which will further enhance my ability to work with more complex applications and systems.
+
+          <p className="text-gray-300 mt-4">
+            I'm also actively exploring Python for Data Analysis and advanced backend development, aiming to deepen my problem-solving capabilities and work with more complex systems.
           </p>
-          <p className="text-base lg:text-lg leading-relaxed text-gray-300 mt-4">
-            One of my greatest passions is exploring the exciting realms of Generative AI and Machine Learning. I am actively diving into these fields to integrate cutting-edge AI solutions into practical, real-world applications. My goal is to leverage data science and machine learning techniques to build intelligent, data-driven solutions that not only solve complex problems but also transform industries.
+
+          <p className="text-gray-300 mt-4">
+            One of my greatest passions lies in the fields of Generative AI and Machine Learning. I'm constantly learning how to apply cutting-edge AI technologies to solve real-world problems and build intelligent, data-driven solutions that create meaningful impact.
           </p>
 
           <div className="flex flex-row justify-start mt-8">
@@ -81,15 +87,13 @@ const About = () => {
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              {" "}
-              Education{" "}
+              Education
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              {" "}
-              Skills{" "}
+              Skills
             </TabButton>
           </div>
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { EyeIcon, CodeBracketIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -9,7 +8,6 @@ const ProjectCard = ({ imgUrl, title, description, previewUrl, gitUrl }) => {
 
   return (
     <div className='rounded-lg overflow-hidden bg-gray-900 shadow-lg transition-transform transform hover:scale-105'>
-      {/* Ensure parent has relative position for fill images */}
       <div className='relative w-full h-40 sm:h-48 md:h-56 lg:h-64'>
         <Image 
           src={validImgUrl} 

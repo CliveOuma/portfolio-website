@@ -26,12 +26,12 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Student Mangement System",
-    description: "A solution for lecturers and students to access their information securely.",
-    image: "/images/projects/std.png",
+    title: "Student Skill Match Application",
+    description: "A platform designed to help students find teammates and team formation.",
+    image: "/images/projects/skill-match.png",
     tag: ["All", "FullStack"],
-    gitUrl: "https://github.com/CliveOuma/student-management-system",
-    previewUrl: "https://the-student-management-system.vercel.app/",
+    gitUrl: "https://github.com/CliveOuma/student-skill-match",
+    previewUrl: "https://student-skill-match.vercel.app/",
   },
   {
     id: 4,
@@ -91,7 +91,7 @@ const Project = () => {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Works
+            Projects
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>

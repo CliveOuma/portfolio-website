@@ -6,36 +6,41 @@ import { useState } from "react";
 const experiences = [
   {
     id: 1,
-    title: "Web Developer",
-    company: "Tianlong Industrial Limited (Internship)",
+    title: "Software Engineer",
+    company: "Tianlong Industrial Limited",
     startDate: "May/2024",
     endDate: "August/2024",
     details: [
       {
         id: 1,
         detail:
-          "Developed a Safety Management System  specifically for Tianlong cylinder production company to record and manage near-miss incidents. The system ensures that all potential safety hazards are documented, reviewed, and addressed promptly. .",
+          "Spearheaded the development of a responsive safety management system that improved reporting efficiency and workplace incident tracking across departments..",
       },
 
       {
         id: 2,
         detail:
-          "Created a simple and responsive landing page for Tianlong to showcase the various gas cookers they offer and their respective features.",
+          "Delivered a seamless and intuitive user experience by building mobile-first product landing pages using React, Next.js, and Tailwind CSS..",
       },
     ],
   },
 
   {
     id: 2,
-    title: "Data Reviewer",
-    company: "Patika Technology Limited (Contract)",
-    startDate: "July/2024",
+    title: "Software Engineer(AI project)",
+    company: "Patika Technology Limited",
+    startDate: "Sep/2024",
     endDate: "present",
     details: [
       {
         id: 1,
         detail:
-          "Worked closely with the Sanifu AI team to review data from various documents to ensure accuracy by performing data mapping, also logging any issues noted into Trello boards" ,
+          "Contributed to the success of AI model training by reviewing, validating, and annotating structured datasets with high precision and consistency",
+        },
+        {
+        id: 2,
+        detail:
+          "Improved overall data quality through meticulous error spotting and refinement, directly impacting the accuracy of document parsing algorithms."     
       },
     ],
   },

@@ -19,16 +19,14 @@ const Hero = () => {
       <div className='grid grid-cols-1 sm:grid-cols-12'>
         <div className='place-self-center text-center sm:text-left col-span-7 justify-self-start'>
           <h1 className='text-white mb-4 text-2xl sm:text-5xl font-extrabold lg:text-6xl lg:leading-normal'
-              data-aos="zoom-out-up">
+            data-aos="zoom-out-up">
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500'>Hello, I am {" "}</span>
             <br />
             <TypeAnimation
               sequence={[
                 'Clive Ouma',
                 1000,
-                'Full Stack Developer ',
-                1000,
-                'Passionate about AI & ML',
+                'Software Engineer',
                 1000,
               ]}
               wrapper="span"
@@ -37,15 +35,15 @@ const Hero = () => {
             />
           </h1>
           <p className='text-white lg:text-xl text-base mb-6 sm:text-lg' data-aos="zoom-out-up">
-          Building accessible,Scalable Web Applications & Intelligent Data-Driven Solutions.
+            Designing scalable, intelligent solutions with a strong focus on performance, user experience, accessibility, and clean engineering principles across modern software platforms.
           </p>
           <div>
             <button className='py-3 px-6 mr-4 rounded-full sm:w-fit w-full bg-gradient-to-br from-orange-500 via-red-600 to-blue-500 hover:bg-slate-200 text-white'>
-              <a href="#contact">Hire me!</a>
+              <a href="#contact">Let’s Connect</a>
             </button>
             <button className='py-1 px-1 rounded-full sm:w-fit mt-3 w-full bg-gradient-to-br from-orange-500 via-red-600 to-blue-500 hover:bg-slate-900 text-white border border-white'>
               <span className='block bg-black rounded-full px-5 py-2 hover:bg-slate-900'>
-                <a href="/docs/MyResume.pdf" className="flex items-center">
+                <a href="/docs/Clive_Ouma_Resume.pdf" className="flex items-center">
                   <span className="mr-2">Download Resume</span>
                   <Image src="/assets/img/download-solid.svg" width={3} height={3} alt="download" className="w-5 filter invert h-5" />
                 </a>
